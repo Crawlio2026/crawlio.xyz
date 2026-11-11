@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crawlio Network</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      background-color: #000;
+      background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWdkam1rbHR6d2Q5OTZ1ejQzNnpzbGhtZndlcGJoOTM1emZnOWF1ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XPoKNvkweSo4WdZA50/giphy.gif");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .overlay {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.65);
+      padding: 24px;
+    }
+
+    .card {
+      max-width: 640px;
+      width: 100%;
+      text-align: center;
+      padding: 48px 32px;
+      border: 2px solid #ff0000;
+      border-radius: 18px;
+      background: rgba(0, 0, 0, 0.85);
+      box-shadow: 0 0 35px rgba(255, 0, 0, 0.45);
+    }
+
+    .logo {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ff0000;
+      box-shadow: 0 0 25px rgba(255, 0, 0, 0.65);
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      color: #ff0000;
+      text-shadow: 0 0 14px rgba(255, 0, 0, 0.75);
+      margin-bottom: 14px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      margin-bottom: 24px;
+      color: #f2f2f2;
+    }
+
+    .site-link {
+      display: inline-block;
+      padding: 13px 30px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      background: #ff0000;
+      border: 2px solid #fff;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .site-link:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 22px rgba(255, 0, 0, 0.8);
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.95rem;
+      color: #ff4d4d;
+    }
+
+    footer a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    footer a:hover {
+      color: #ff0000;
+    }
+
+    @media (max-width: 520px) {
+      .logo {
+        width: 130px;
+        height: 130px;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay">
+    <main class="card">
+      <img
+        class="logo"
+        src="https://cdn.phototourl.com/member/2026-11-09-307a946e-afda-4973-95fd-8ea7c42c1e11.jpg"
+        alt="Crawlio logo"
+      >
+
+      <p>This Domain is owned By <strong>Crawlio.online</strong>.</p>
+
+      <a class="site-link" href="https://crawlio.online" target="_blank" rel="noopener">
+        Visit
+      </a>
+
+      <footer>
+        &copy; <span id="year"></span> Crawlio.online — All rights reserved.
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
